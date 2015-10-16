@@ -13,7 +13,7 @@ class Level
 public:
 	void LoadMap(string, Player&);
 	void PrintLevel();
-	void setPosition(int , int);
+	void setPosition(int , int, char);
 	Level();
 	~Level();
 private:

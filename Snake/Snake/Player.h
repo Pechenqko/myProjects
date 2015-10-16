@@ -11,6 +11,7 @@ class Player
 {
 public:
 	void PlayerInit(int, int, int, Level&);
+	Player(const int);
 	//Player(Player*);
 	~Player();
 	Player();
@@ -18,9 +19,10 @@ private:
 	int nowX;
 	int nowY;
 	int direct;
-	Player* PreviousPlayer;
+	//Player* PreviousPlayer;
 	Player* NextPlayer;
-	vector <int> snake;
+	int NumberPlayer;
+	//vector <int> snake;
 };
 
 

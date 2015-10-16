@@ -62,9 +62,9 @@ void Level::PrintLevel()
 	cout << endl;
 }
 
-void Level::setPosition(int i, int j) //I finished here 14.10.15
+void Level::setPosition(int i, int j, char x) //I finished here 14.10.15
 {
-	DataMap[i][j] = 'G';
+	DataMap[i][j] = x;
 }
 
 
