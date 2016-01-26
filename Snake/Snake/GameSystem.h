@@ -2,6 +2,7 @@
 
 #include "Level.h"
 #include "Player.h"
+#include <thread>
 //#include <string>
 #include <vector>
 #define NOWX 30
@@ -14,7 +15,7 @@ class GameSystem
 {
 public:
 	GameSystem();
-	GameSystem(string);
+	GameSystem(string); //:warning:
 	void GamePlay();
 	~GameSystem();
 private:

@@ -6,22 +6,17 @@ void Player::PlayerInit(int setX, int setY, int direction, Level& level)
 {
 	level.setPosition(setY, setX, 'G');
 	srand(time(0));
-	int length = 4;
 	int direct = rand() % 3;
 
-	while (length)
-	{
-		NextPlayer = new Player(1);
-		length--;
-	}
 }
-
+// :war
 //Player::Player(Player* pl, int numb)
 //{
 //	NextPlayer = pl;
 //}
 Player::Player(const int n)
 {
+
 	if (n == 15)
 	{
 		NumberPlayer = n;

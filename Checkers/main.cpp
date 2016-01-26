@@ -5,6 +5,6 @@
 int main(int argc, char** argv)
 {
     QApplication app(argc,argv);
-    System* StartSystem = new System;
+    new System;
     return app.exec();
 }

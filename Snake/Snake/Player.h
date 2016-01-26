@@ -11,7 +11,7 @@ class Player
 {
 public:
 	void PlayerInit(int, int, int, Level&);
-	Player(const int);
+	Player(const :int);
 	//Player(Player*);
 	~Player();
 	Player();

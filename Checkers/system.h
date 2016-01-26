@@ -7,6 +7,8 @@
 
 class System : public QGraphicsScene
 {
+private:
+    Menu* menu;
 public:
     System();
 };

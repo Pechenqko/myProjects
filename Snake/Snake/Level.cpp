@@ -18,10 +18,10 @@ void Level::LoadMap(string filename, Player &player)
 	string line("\n");
 	ifstream File;
 	File.open(filename);
-
 	if (File.fail())
 	{
 		perror(filename.c_str());
+		system("pause");
 		exit(1);
 	}
 

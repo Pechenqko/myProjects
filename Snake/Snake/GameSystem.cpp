@@ -1,6 +1,7 @@
 #include "GameSystem.h"
 #include <fstream>
 #include <iostream>
+#include <thread>
 
 using namespace std;
 
@@ -15,17 +16,18 @@ GameSystem::GameSystem(string filename)
 	_level.LoadMap(filename, _player);
 	_player.PlayerInit(NOWX, NOWY, NOWDIRECTION, _level);
 	_level.PrintLevel();
+
+	GamePlay();
 }
 
 void GameSystem::GamePlay()
 {
-	/*bool flag = false;
-	while (flag != true)
-	{
-		_level.PrintLevel();
-
-	}*/
+	int start = clock();
+	cout << start << "  new  " << clock();
 }
+
+
+// :warning: 
 
 
 
